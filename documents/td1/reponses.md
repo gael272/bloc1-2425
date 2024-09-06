@@ -6,6 +6,7 @@ Au contraire la requête "Post" envoie des données en passant du serveur à l'u
 ## Question 2
 
 | [GET] |                                                            | [POST] | 
+| :------------------------------------------------------------------:----------------------------------------------------------------------------------------------------------------------------:|
 | Avec get les données sont écrites directement dans l'url |         | post écrit les paramètres de l'url dans une requête http cela permet de garder la confidentialité des données utilisateurs|
 | l'adresse du site web est présent dans l'historique |              | A chaque utilisation la requête doit être soumise à chaque fois |                                                       
 | les données ne sont pas protégés |                                   
