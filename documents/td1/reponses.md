@@ -8,13 +8,16 @@ Au contraire la requête "Post" envoie des données en passant du serveur à l'u
                           
 | GET       | POST      |
 | --------- | --------- |
-| Les données sont écrites directement dans l'url  | écrit les paramètres de l'url dans une requête http cela permet de garder la confidentialité des données utilisateurs  |
+| Les données sont écrites directement dans l'url  | Ecrit les paramètres de l'url dans une requête http cela permet de garder la confidentialité des données utilisateurs  |
 | L'adresse du site web est présent dans l'historique  | A chaque utilisation la requête doit être soumise à chaque fois  |
-| Les données ne sont pas protégés |   |
+| Les données ne sont pas protégés | Les requêtes POST permettent d'envoyer une grande quantité de données  |
+|Léger et rapide par rapport a POST|Possibilité d'envoyer des données complexes|
+| Longueur limitée : L'URL ne peut pas dépasser une certaine longueur|Interaction avec les bases de données|
+
 
 ## Question 3
 
-Le protocole http est extensible par sa personnalisation des méthodes "get" et "post" et les en-têtes le MIME qui permet de supporter les vidéos, images, textes.
+Le protocole http est extensible par sa personnalisation des méthodes "get" et "post" et les en-têtes et le MIME qui permet de supporter les vidéos, images, textes.
 
 ## Question 4
 
@@ -41,13 +44,13 @@ La négociation de contenu est utile pour avoir une correspondance entre le clie
 ## Question 8-9
 
 ## Question 10
-| en-tête de requête http | rôle | Exemple |
+| en-tête de requête  | rôle | Exemple |
 |---------------|-----------|--------|
-|               |           |        |
-|               |           |        |
-|               |           |        |
-|               |           |        |
-|               |           |        |
-|               |           |        |
-
-
+| Accept-Language              |Version linguistique souhaitée           | Accept-Language: fr-FR       |
+|  Cookie             |  Cookie stocké pour ce serveur         |   Cookie: $Version=1; Content=23     |
+|Content-Type               |  	Type MIME ; pertinent pour les requêtes POST et PUT         |Content-Type: application/x_222-form-urlencoded        |
+| Host               |   Nom de domaine du serveur        |Host: github.com       |
+| User-Agent              |  User-Agent du client         | Chrome/80.0.3987.132 Safari/537.36       |
+|  Date             |  Date et heure de la demande         | Date: Mon, 9 March 2020 09:02:22 GMT       |
+| Cache-Control| Options du mécanisme de mise en cache|Cache-Control: no-cache |
+| Authorization|Données d’authentification |Basic WjbU7D25zTAlV2tZ7== |
