@@ -13,3 +13,16 @@ Au contraire la requête "Post" envoie des données en passant du serveur à l'u
 | Les données ne sont pas protégés |   |
 
 ## Question 3
+
+Le protocole http est extensible par sa personnalisation des méthodes "get" et "post" et les en-têtes le MIME qui permet de supporter les vidéos, images, textes.
+
+## Question 4
+
+Le HTTP est un protocole sans état car chaque requête est indépendante il faut donc l'utilisation des cookies ou d'un compte qui permettrait de garder les données de l'utilisateur.
+
+## Question 5
+
+Une URL commence par le protocole https:// ensuite vient le nom de domaine par exemple https://github.com , le ".com" est le TLD pour Top-Level Domain puis vient le chemin d'accès ici /gael272/bloc1-2425/
+
+## Question 6
+
