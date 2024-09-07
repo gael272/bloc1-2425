@@ -38,11 +38,16 @@ Il y a **5 familles de code status** :
 
 La négociation de contenu est utile pour avoir une correspondance entre le client et le serveur, le client demande la ressource par exemple Accept-language: en , le serveur cherche sur ses ressources et l'envoie si il la dispose ici : content-language: en et la langue sera changé.
 
-## Question 8
+## Question 8-9
 
-
-
-
-
+## Question 10
+| en-tête de requête http | rôle | Exemple |
+|---------------|-----------|--------|
+|               |           |        |
+|               |           |        |
+|               |           |        |
+|               |           |        |
+|               |           |        |
+|               |           |        |
 
 
