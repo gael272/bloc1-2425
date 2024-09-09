@@ -6,13 +6,20 @@ Au contraire la requête "Post" envoie des données en passant du serveur à l'u
 
 ## Question 2
                           
-| GET       | POST      |
-| --------- | --------- |
-| Les données sont écrites directement dans l'url  | Ecrit les paramètres de l'url dans une requête http cela permet de garder la confidentialité des données utilisateurs  |
-| L'adresse du site web est présent dans l'historique  | A chaque utilisation la requête doit être soumise à chaque fois  |
-| Les données ne sont pas protégés | Les requêtes POST permettent d'envoyer une grande quantité de données  |
-|Léger et rapide par rapport a POST|Possibilité d'envoyer des données complexes|
-| Longueur limitée : L'URL ne peut pas dépasser une certaine longueur|Interaction avec les bases de données|
+## 2
+| Critère                     | GET                                      | POST                                   |
+|-----------------------------|------------------------------------------|----------------------------------------|
+| **Exemple d'utilisation**   | Recherche de produits                    | Inscription utilisateur                |
+| **URL exemple**             | https://www.monsite-ecommerce.com/recherche?q=chaussures&couleur=noir | https://www.monsite-ecommerce.com/inscription |
+| **Visibilité des données**   | Visibles dans l'URL                     | Cachées dans le corps de la requête   |
+| **Sécurité**                | Moins sécurisé pour les données sensibles| Plus sécurisé pour les données sensibles|
+| **Quantité de données**     | Limitée par la longueur de l'URL        | Peut envoyer de grandes quantités de données |
+| **Mise en cache**           | Facilement mise en cache                 | Généralement non mise en cache        |
+| **Partage/Favoris**         | Facile à partager ou mettre en favori    | Difficile à partager ou mettre en favori |
+| **Type de données**         | Principalement pour récupérer des données | Pour envoyer des données au serveur    |
+| **Modification du serveur**  | Ne modifie pas l'état du serveur        | Peut modifier l'état du serveur       |
+| **Encodage des données**    | URL-encoded                              | Peut utiliser différents encodages (form-data, JSON, etc.) |
+| **Utilisation du navigateur**| Peut être utilisé directement dans la barre d'adresse | Nécessite généralement un formulaire ou du JavaScript |
 
 
 ## Question 3
