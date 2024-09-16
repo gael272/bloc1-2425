@@ -11,5 +11,11 @@ h1 {
 	margin-bottom: 25px;
 	text-transform: uppercase;
 }
-
+h2 {
+	color: #1cab20;
+	text-decoration: underline;
+}
+p {
+	font-size: 0.9em;
+}
 	
