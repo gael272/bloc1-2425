@@ -1,9 +1,15 @@
 body {
 	font-family: 'Arial';
+	margin: 20px;
+	line-height: 1.5;
 }
 
 h1 {
-color: red;
+	color: #483D8B;
+	font-size: 3.5em;
+	text-align: center;
+	margin-bottom: 25px;
+	text-transform: uppercase;
 }
 
 	
