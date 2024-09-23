@@ -8,15 +8,14 @@
 body {
   background-color: #f5f5f5;
   display: flex;
-  justify-content: ;
   align-items: center;
   min-height: 100vh;
   padding: 20px;
 }
 
 .main-container {
-  width: 100%;
-  
+  width: 50%;
+  background-image: url('./../df-min.jpg');
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
