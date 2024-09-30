@@ -77,7 +77,7 @@ nav ul li a {
 }
 
 .recent-posts .post img {
-    width: 100%;
+    width: 75%;
     height: auto;
 }
 
@@ -86,7 +86,7 @@ nav ul li a {
 }
 
 .blog {
-    width: 75%;
+    width: 30%;
     padding: 20px;
     background-color: #fff;
 }
