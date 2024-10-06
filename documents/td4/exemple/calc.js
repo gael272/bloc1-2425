@@ -13,8 +13,3 @@ bt.addEventListener("click",()=>{
     $("historique").appendChild(li);
 
 });
-
-const btClear=$("btClear");
-btClear.addEventListener("click",()=>{
-    resultat=0;
-}
