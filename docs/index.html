@@ -1,12 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web local</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index de mes dossiers</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000; 
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            background-color: #4CAF50; 
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px 0;
+        }
+
+        a {
+            display: block;
+            background-color: #444444; 
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
+        }
+
+        a:hover {
+            background-color: #4CAF50; /
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>TDs web</h1>
+
+    <div class="container">
+        <h1>Index de mes dossiers</h1>
+        <ul>
+            <li><a href="..\documents\td1\reponses.md">TD 1</a></li>
+
+            <li><a href="">TD 2</a></li>
+
+            <li><a href="pages\td3\about-us.html">TD-3 about-us</a></li>
+            <li><a href="pages\td3\blog.html">TD-3 blog</a></li>
+            <li><a href="pages\td3\conseil-gestion.html">TD-3 conseil-gestion</a></li>
+
+            <li><a href="pages\td4">TD 4</a></li>
+        </ul>
+    </div>
+
 </body>
 </html>
