@@ -1,82 +1,61 @@
-function changerCouleurFond() {
-  document.body.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+document.getElementById('changeColorBtn').addEventListener('click', function () {
+  document.body.style.backgroundColor = document.body.style.backgroundColor === 'purple' ? 'white' : 'purple';
+});
+
+document.getElementById('addItemBtn').addEventListener('click', function () {
+const itemValue = document.getElementById('itemInput').value;
+if (itemValue) {
+  const li = document.createElement('li');
+  li.textContent = itemValue;
+  document.getElementById('itemList').appendChild(li);
+  document.getElementById('itemInput').value = '';
 }
+});
 
-
-function ajouterElement() {
-  const ul = document.getElementById('liste');
-  const newElement = document.getElementById('newElement').value;
-  if (newElement) {
-      const li = document.createElement('li');
-      li.textContent = newElement;
-      ul.appendChild(li);
-      document.getElementById('newElement').value = '';
-  }
+document.getElementById('addBtn').addEventListener('click', function () {
+const num1 = parseFloat(document.getElementById('num1').value);
+const num2 = parseFloat(document.getElementById('num2').value);
+if (!isNaN(num1) && !isNaN(num2)) {
+  document.getElementById('result').textContent = `La somme est : ${num1 + num2}`;
+} else {
+  document.getElementById('result').textContent = 'Veuillez entrer deux nombres valides.';
 }
+});
 
+document.getElementById('imageSelect').addEventListener('change', function () {
+document.getElementById('displayImage').src = this.value;
+});
 
-function calculerSomme() {
-  const num1 = parseFloat(document.getElementById('num1').value);
-  const num2 = parseFloat(document.getElementById('num2').value);
-  const somme = num1 + num2;
-  document.getElementById('resultatAddition').textContent = 'La somme est : ' + somme;
+document.getElementById('hoverElement').addEventListener('mouseover', function () {
+alert('Vous avez survolé cet élément !');
+});
+
+function updateClock() {
+const now = new Date();
+const timeString = now.toLocaleTimeString();
+document.getElementById('clock').textContent = timeString;
 }
+setInterval(updateClock, 1000);
+updateClock();
 
-
-function afficherImage() {
-  const choix = document.getElementById('choixImage').value;
-  const img = document.getElementById('image');
-  if (choix === 'chat') {
-      img.src = 'https://placekitten.com/200/300';
-  } else if (choix === 'chien') {
-      img.src = 'https://placedog.net/200/300';
-  } else {
-      img.src = '';
-  }
+document.getElementById('deleteBtn').addEventListener('click', function () {
+const confirmDelete = confirm('Voulez-vous vraiment supprimer cet élément ?');
+if (confirmDelete) {
+  document.getElementById('deleteElement').remove();
 }
+});
 
+document.getElementById('toggleCheckbox').addEventListener('change', function () {
+const element = document.getElementById('toggleElement');
+element.style.display = this.checked ? 'block' : 'none';
+});
 
-function afficherAlerte() {
-  alert('Vous avez passé la souris sur la zone!');
-}
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+event.preventDefault();
+const name = document.getElementById('name').value;
+const email = document.getElementById('email').value;
+const message = document.getElementById('message').value;
+console.log(`Nom: ${name}, Email: ${email}, Message: ${message}`);
+});
 
-
-function demarrerHorloge() {
-  setInterval(() => {
-      const now = new Date();
-      document.getElementById('horloge').textContent = now.toLocaleTimeString();
-  }, 1000);
-}
-demarrerHorloge();
-
-
-function confirmerSuppression() {
-  const confirmation = confirm('Voulez-vous vraiment supprimer cet élément ?');
-  if (confirmation) {
-      document.getElementById('suppressionStatus').textContent = 'Élément supprimé !';
-  } else {
-      document.getElementById('suppressionStatus').textContent = 'Suppression annulée.';
-  }
-}
-
-
-function toggleElement() {
-  const checkbox = document.getElementById('toggleCheck');
-  const element = document.getElementById('elementCache');
-  if (checkbox.checked) {
-      element.style.display = 'block';
-  } else {
-      element.style.display = 'none';
-  }
-}
-
-
-function envoyerFormulaire() {
-  const nom = document.getElementById('nom').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-  
-  document.getElementById('formStatus').textContent = `Merci ${nom}, nous avons bien reçu votre message : "${message}".`;
-  console.log(`Nom: ${nom}, Email: ${email}, Message: ${message}`);
-  return false;
-}
+"bt && bt.add = vérifier si bouton existe, sinon ne pas éxécuter le bout de code"

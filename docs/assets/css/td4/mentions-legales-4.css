@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #14c43a;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+
+nav {
+    background-color: #4caf50;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ajax-link {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.ajax-link:hover {
+    color: #a5d6a7;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+
+#main-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    min-height: 200px;
+    transition: background 0.3s ease-in-out;
+}
+
+
+#main-container.loading {
+    background: #f0f0f0 url('loading-spinner.gif') center center no-repeat;
+    background-size: 50px 50px;
+    color: transparent; 
+}
+
+#main-container p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+#error-message {
+    color: #d32f2f;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        padding: 10px 0;
+    }
+    .ajax-link {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    #main-container {
+        width: 90%;
+    }
+}
