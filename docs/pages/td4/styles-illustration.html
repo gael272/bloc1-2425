@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface de style de texte</title>
+    <style>
+        #text {
+            border: 1px solid #000;
+            padding: 10px;
+            width: 100%;
+            min-height: 50px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Exemple d'interface pour changer les attributs de style du texte</h2>
+<p>Cliquez sur les cases à cocher et utilisez les autres éléments ci-dessous pour changer les attributs de style du texte affiché dans la zone :</p>
+
+<label><input type="checkbox" id="boldCheckbox"> Gras</label>
+<label><input type="checkbox" id="italicCheckbox"> Italique</label>
+<label><input type="checkbox" id="underlineCheckbox"> Souligné</label>
+<label><input type="checkbox" id="strikeCheckbox"> Barré</label>
+<br><br>
+
+<label for="colorPicker">Couleur : </label>
+<input type="color" id="colorPicker" value="#000000">
+<br><br>
+
+<label for="fontSize">Taille : </label>
+<input type="number" id="fontSize" value="20" min="10" max="50">
+<br><br>
+
+<label for="fontSelect">Police : </label>
+<select id="fontSelect">
+    <option value="Arial">Arial</option>
+    <option value="Courier">Courier</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Times New Roman">Times New Roman</option>
+    <option value="Verdana">Verdana</option>
+</select>
+<br><br>
+
+<button id="increaseBtn">Augmenter taille</button>
+<button id="decreaseBtn">Diminuer taille</button>
+
+<div id="text" contenteditable="true">
+    Texte exemple pour illustrer le changement des attributs de style.
+</div>
+
+<script src="..\..\js\td4\styles-illustration.js"></script>
+
+</body>
+</html>

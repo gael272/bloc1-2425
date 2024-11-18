@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+#myInput {
+    width: calc(100% - 50px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.addBtn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+.addBtn:hover {
+    background-color: #388e3c;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: #f1f1f1;
+}
+
+
+.checked {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+.close {
+    color: #ff6b6b;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #ff3b3b;
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+    #myInput {
+        width: calc(100% - 40px);
+    }
+}
