@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous Contacter</title>
+    <link rel="stylesheet" href="..\..\assets\css\td7\contact.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Nous contacter</h1>
+        <form action="submit-contact.php" method="POST">
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required pattern="[A-Za-zÀ-ÿ\s]+" title="Entrez uniquement des lettres">
+            </div>
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required pattern="[A-Za-zÀ-ÿ\s]+" title="Entrez uniquement des lettres">
+            </div>
+            <div class="form-group">
+                <label for="mail">Mail :</label>
+                <input type="email" id="mail" name="mail" required>
+            </div>
+            <div class="form-group">
+                <label for="commentaire">Commentaire :</label>
+                <textarea id="commentaire" name="commentaire" required maxlength="500"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Soumettre</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
